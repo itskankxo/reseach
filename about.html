@@ -1,11 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>เกี่ยวกับ CPAC | CPAC Ready-Mixed Concrete</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cpac-blue: #00A0E3;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --bg-alt: #f5f7fa;
+      --radius: 16px;
+      --container: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      font-family: "Prompt", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    a { color: var(--cpac-blue); text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; border-radius: 8px; }
+
+    #nav-placeholder { position: sticky; top: 0; z-index: 50; }
+
+    .container { max-width: var(--container); margin: auto; padding: 24px; }
+    .hero {
+      background: linear-gradient(180deg, #00A0E3 0%, #008ECC 100%);
+      color: #fff; padding: 100px 24px 80px; text-align: center;
+    }
+    .hero h1 { font-size: 42px; margin: 0 0 12px; }
+    .hero p { font-size: 18px; opacity: 0.9; max-width: 720px; margin: auto; }
+
+    .section { padding: 60px 0; }
+    .section.alt { background: var(--bg-alt); }
+    .section h2 { font-size: 30px; margin: 0 0 12px; color: var(--cpac-blue); }
+    .section p.lead { color: var(--muted); margin: 0 0 20px; }
+
+    .grid { display: grid; gap: 24px; }
+    @media(min-width: 860px) {
+      .grid.cols-2 { grid-template-columns: 1fr 1fr; }
+      .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+      .grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0,160,227,0.15);
+    }
+
+    /* Gallery */
+    .gallery figure { margin: 0; background: #fff; overflow: hidden; border-radius: 12px; border: 1px solid #e5e7eb; }
+    .gallery img { transition: transform 0.4s ease; }
+    .gallery figure:hover img { transform: scale(1.05); }
+    .caption { padding: 10px 12px; font-size: 14px; color: var(--muted); border-top: 1px solid #eee; }
+
+    /* Scroll animation */
+    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    footer { text-align: center; padding: 40px 0; color: var(--muted); font-size: 14px; background: var(--bg-alt); }
+  </style>
 </head>
 <body>
-    about
+  <div id="nav-placeholder"></div>
+
+  <!-- HERO -->
+  <header class="hero reveal">
+    <h1>เกี่ยวกับบริษัท CPAC</h1>
+    <p>
+      CPAC หรือ บริษัท ผลิตภัณฑ์และวัตถุก่อสร้าง จำกัด เป็นหนึ่งในธุรกิจหลักของกลุ่มปูนซีเมนต์ไทย (SCG)
+      มุ่งมั่นพัฒนาโซลูชันงานก่อสร้างแบบครบวงจร เพื่อยกระดับมาตรฐานอุตสาหกรรมก่อสร้างของไทย
+      สู่ความยั่งยืนในอนาคต
+    </p>
+  </header>
+
+  <!-- SECTION 1 -->
+  <section class="section">
+    <div class="container grid cols-2">
+      <div class="card reveal">
+        <h2>ธุรกิจหลักของ CPAC</h2>
+        <p class="lead">สร้างคุณภาพงานก่อสร้างอย่างครบวงจร</p>
+        <p>
+          CPAC ให้บริการและผลิตภัณฑ์หลากหลาย ครอบคลุมตั้งแต่วัตถุดิบ ผลิตภัณฑ์คอนกรีต ไปจนถึงบริการโซลูชันดิจิทัล
+          เพื่อเพิ่มประสิทธิภาพและลดต้นทุนให้กับภาคก่อสร้าง โดยมีธุรกิจหลักดังนี้:
+        </p>
+        <ul>
+          <li>✅ ธุรกิจคอนกรีตผสมเสร็จ (Ready-Mixed Concrete)</li>
+          <li>✅ ธุรกิจคอนกรีตสำเร็จรูป (Precast Concrete)</li>
+          <li>✅ ธุรกิจผลิตภัณฑ์ก่อสร้าง เช่น เสาเข็ม แผ่นพื้น ผนังคอนกรีตสำเร็จรูป</li>
+          <li>✅ ธุรกิจบริการโซลูชันงานก่อสร้าง (CPAC Construction Solution)</li>
+          <li>✅ ธุรกิจเทคโนโลยีดิจิทัลเพื่อการบริหารและควบคุมคุณภาพ</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h2>แนวคิดการดำเนินธุรกิจ</h2>
+        <p class="lead">“สร้างคุณภาพ ยั่งยืนทุกขั้นตอน”</p>
+        <p>
+          CPAC ยึดหลักการดำเนินธุรกิจตามแนวทาง ESG — สิ่งแวดล้อม (Environment), สังคม (Social)
+          และธรรมาภิบาล (Governance) เพื่อสร้างความสมดุลระหว่างประสิทธิภาพทางธุรกิจ
+          และความรับผิดชอบต่อสังคมและสิ่งแวดล้อม
+        </p>
+        <p>
+          โดยใช้เทคโนโลยีดิจิทัล เช่น IoT, AI, และระบบวิเคราะห์ข้อมูล เพื่อพัฒนากระบวนการผลิต
+          การขนส่ง และการควบคุมคุณภาพให้ทันสมัยและแม่นยำมากยิ่งขึ้น
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="section alt">
+    <div class="container grid cols-2">
+      <div class="card reveal">
+        <h2>โซลูชัน CPAC Construction Solution</h2>
+        <p class="lead">นวัตกรรมเพื่อประสิทธิภาพและความแม่นยำ</p>
+        <p>
+          CPAC นำเสนอโซลูชันแบบครบวงจรสำหรับโครงการก่อสร้าง โดยผสานเทคโนโลยี BIM, IoT และระบบวิเคราะห์ข้อมูล
+          ช่วยให้ลูกค้าสามารถวางแผน ควบคุมคุณภาพ และบริหารโครงการได้อย่างมีประสิทธิภาพ
+        </p>
+        <ul>
+          <li>✅ ระบบติดตามและบริหารการขนส่งคอนกรีตแบบเรียลไทม์</li>
+          <li>✅ ระบบควบคุมคุณภาพคอนกรีตในแต่ละขั้นตอน</li>
+          <li>✅ โซลูชันงานโครงสร้างสำเร็จรูป (Precast Solution)</li>
+          <li>✅ บริการตรวจสอบและวิเคราะห์ข้อมูลหน้างาน</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h2>การพัฒนาอย่างยั่งยืน</h2>
+        <p class="lead">CPAC Green Solution</p>
+        <p>
+          CPAC ให้ความสำคัญกับการลดผลกระทบต่อสิ่งแวดล้อม โดยพัฒนา “Green Concrete” และเทคโนโลยีลดคาร์บอน
+          เพื่อสนับสนุนเป้าหมาย Net Zero ของ SCG พร้อมทั้งใช้พลังงานสะอาดและเพิ่มประสิทธิภาพการผลิต
+        </p>
+        <ul>
+          <li>✅ ลดการใช้ปูนซีเมนต์ด้วยวัสดุทดแทน</li>
+          <li>✅ ใช้ระบบรีไซเคิลน้ำและวัสดุเหลือใช้</li>
+          <li>✅ ควบคุมการปล่อย CO₂ ในทุกกระบวนการผลิต</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 (Gallery) -->
+  <section class="section">
+    <div class="container">
+      <h2 class="reveal">ภาพรวมองค์กร CPAC</h2>
+      <p class="lead reveal">โรงงาน ระบบขนส่ง และเทคโนโลยีที่ทันสมัย</p>
+
+      <div class="gallery grid cols-3">
+        <figure class="reveal">
+          <img src="assets/images/cpac-plant.jpg" alt="โรงงานคอนกรีต CPAC">
+          <figcaption class="caption">โรงงานผลิตคอนกรีตผสมเสร็จ</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/images/cpac-logistics.jpg" alt="Fleet Logistics">
+          <figcaption class="caption">ระบบขนส่งและติดตามรถโม่</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/images/cpac-digital.jpg" alt="Digital dashboard">
+          <figcaption class="caption">เทคโนโลยีดิจิทัลและระบบวิเคราะห์ข้อมูล</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/images/cpac-lab.jpg" alt="Quality control laboratory">
+          <figcaption class="caption">ห้องปฏิบัติการควบคุมคุณภาพคอนกรีต</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 CPAC | บริษัท ผลิตภัณฑ์และวัตถุก่อสร้าง จำกัด (ในเครือ SCG)
+  </footer>
+
+  <!-- Inject shared nav -->
+  <script src="assets/js/nav.js" defer></script>
+
+  <!-- Scroll animation -->
+  <script>
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('is-visible'); }
+      })
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 </body>
 </html>

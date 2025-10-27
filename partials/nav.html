@@ -1,0 +1,20 @@
+<nav class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="coop-log.html">Co-op Log</a>
+  <a href="management.html">Management</a>
+  <a href="supervision.html">Supervision</a>
+</nav>
+
+<style>
+  .top-nav{
+    display:flex; gap:16px; align-items:center;
+    padding:12px 16px; border-bottom:1px solid #eee;
+    position:sticky; top:0; background:#fff; z-index:10;
+  }
+  .top-nav a{ text-decoration:none; color:#333; padding:6px 8px; border-radius:6px; }
+  .top-nav a:hover{ background:#f2f2f2; }
+  .top-nav a.active{
+    color:#0a7cff; background:#eaf3ff; font-weight:600;
+  }
+</style>
